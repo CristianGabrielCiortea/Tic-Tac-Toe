@@ -1,0 +1,19 @@
+<div class="board">
+  <div class="status">
+    {{ status }}
+  </div>
+  <div *ngFor="let row of board; let rowIndex = index" class="row">
+    <div *ngFor="let cell of row; let colIndex = index" class="cell-container">
+      <app-cell
+        [cell]="cell"
+        [row]="rowIndex"
+        [col]="colIndex"
+        (click)="makeMove(rowIndex, colIndex)"
+      ></app-cell>
+    </div>
+  </div>
+
+  <div class="reset" *ngIf="isGameOver">
+    <button class="resetButton" mat-raised-button (click)="reset()">Reset</button>
+  </div>
+</div>

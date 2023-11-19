@@ -1,0 +1,37 @@
+.board {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+.status {
+  display: flex;
+  color: rgb(1, 73, 47);
+  font-size: 40px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.reset {
+  color: rgb(1, 73, 47);
+}
+
+.resetButton {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  cursor: pointer;
+}
+
+.resetButton:hover {
+  background-color: rgb(64, 165, 128);
+}
