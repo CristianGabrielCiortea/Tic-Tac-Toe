@@ -34,6 +34,7 @@ export class BoardComponent {
 
     this.board[row][col] = this.currentPlayer;
     if (this.checkForWinner(row, col)) {
+      this.isGameOver = true;
       this.endGame(`Player ${this.currentPlayer} wins!`);
     } else if (this.isBoardFull()) {
       this.endGame('Draw!');
